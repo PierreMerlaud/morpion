@@ -87,7 +87,7 @@ export default function Game() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Morpion</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

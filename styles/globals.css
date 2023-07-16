@@ -45,14 +45,6 @@ code {
   font-size: 1.2em;
 }
 
-ul {
-  padding-left: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .square {
   background: #0b2447;
   border: 0.2rem solid #ffffff;
@@ -134,12 +126,20 @@ ul {
   color: #ffffff;
 }
 
+.game {
+  display: flex;
+  align-items: center;
+}
+
 .game-board {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.game-info {
+  width: 18rem;
+}
 .board-row:after {
   clear: both;
   content: "";
@@ -152,10 +152,6 @@ ul {
   background-color: #ffffff;
   text-align: center;
   width: 50%;
-}
-.game {
-  display: flex;
-  align-items: center;
 }
 
 li {
@@ -170,7 +166,7 @@ ol {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
   .square {
     border: 0.125rem solid #ffffff;
     font-size: 3rem;
