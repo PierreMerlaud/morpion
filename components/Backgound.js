@@ -10,6 +10,17 @@ export default function Background() {
       <span></span>
       <span></span>
       <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   );
 }
