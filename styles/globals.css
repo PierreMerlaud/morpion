@@ -1,38 +1,201 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
+.square {
+  background: #0b2447;
+  border: 0.2rem solid #ffffff;
+  float: left;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 8rem;
+  height: 8rem;
+  margin-right: -0.063rem;
+  margin-top: -0.063rem;
   padding: 0;
+  text-align: center;
+  width: 8rem;
+}
+
+.buttonBase {
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0.5rem;
+}
+
+.buttonBase:hover {
+  box-shadow: #ffffff 0 -25px 18px -14px inset, #ffffff 0 1px 2px,
+    #ffffff 0 2px 4px, #ffffff 0 4px 8px, #ffffff 0 8px 16px,
+    #ffffff 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.buttonStart {
+  background-color: #ffffff;
+  color: #0b2447;
+}
+
+.buttonsX {
+  background-color: #576cbc;
+  color: #ffffff;
+}
+
+.buttonsX:hover {
+  box-shadow: #576cbc 0 -25px 18px -14px inset, #576cbc 0 1px 2px,
+    #576cbc 0 2px 4px, #576cbc 0 4px 8px, #576cbc 0 8px 16px,
+    #576cbc 0 16px 32px;
+}
+
+.buttonsO {
+  background-color: #a5d7e8;
+  color: #ffffff;
+}
+
+.buttonsO:hover {
+  box-shadow: #a5d7e8 0 -25px 18px -14px inset, #a5d7e8 0 1px 2px,
+    #a5d7e8 0 2px 4px, #a5d7e8 0 4px 8px, #a5d7e8 0 8px 16px,
+    #a5d7e8 0 16px 32px;
+}
+
+.x-color {
+  color: #576cbc;
+  border: 0.15rem solid #576cbc;
+}
+
+.o-color {
+  color: #a5d7e8;
+  border: 0.15rem solid #a5d7e8;
+}
+
+.currentMove {
+  margin: 0.5rem;
+  color: #ffffff;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  width: 50%;
+}
+.game {
+  display: flex;
+  align-items: center;
+}
+
+li {
   list-style: none;
 }
 
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+ol {
+  text-align: center;
+}
+
+.Victory {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .square {
+    border: 0.125rem solid #ffffff;
+    font-size: 3rem;
+    line-height: 5rem;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .game {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-board .game-info {
+    margin-left: 0px;
+  }
+
+  .status {
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    width: 60%;
+  }
+
+  ol {
+    padding-inline-start: 0px;
+  }
 }
