@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import Background from "../components/Backgound";
+import Background from "../components/Background";
+import CalculateWinner from "../components/CalculateWinner";
 import Board from "../components/Board";
 import Head from "next/head";
+import Confettis from "../components/Confettis";
 
 /* If you mutated the squares array, implementing time travel would be very difficult.
 
@@ -40,6 +42,8 @@ export default function Game() {
     setCurrentMove(nextHistory.length - 1);
     console.log("history", history);
   }
+
+  const winner = CalculateWinner(currentSquares);
 
   function jumpTo(nextMove) {
     setCurrentMove(nextMove);
@@ -93,16 +97,23 @@ export default function Game() {
 
       <Background />
       <div className="game">
-        <div className="game-board">
-          <Board
-            xIsNext={xIsNext}
-            squares={currentSquares}
-            onPlay={handlePlay}
-          />
-        </div>
-        <div className="game-info">
-          <ol>{moves}</ol>
-        </div>
+        {winner ? (
+          <Confettis value={winner} />
+        ) : (
+          <>
+            <div className="game-board">
+              <Board
+                xIsNext={xIsNext}
+                squares={currentSquares}
+                onPlay={handlePlay}
+              />
+            </div>
+
+            <div className="game-info">
+              <ol>{moves}</ol>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
