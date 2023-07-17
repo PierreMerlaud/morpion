@@ -104,7 +104,7 @@ export default function Game() {
               className="buttonBase buttonStart"
               onClick={() => jumpTo(0)}
             >
-              "Go to game start"
+              Go to game start
             </button>
           </div>
         ) : (
