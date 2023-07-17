@@ -98,7 +98,15 @@ export default function Game() {
       <Background />
       <div className="game">
         {winner ? (
-          <Confettis value={winner} />
+          <div className="victoryDiv">
+            <Confettis value={winner} />
+            <button
+              className="buttonBase buttonStart"
+              onClick={() => jumpTo(0)}
+            >
+              "Go to game start"
+            </button>
+          </div>
         ) : (
           <>
             <div className="game-board">

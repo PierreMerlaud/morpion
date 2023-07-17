@@ -13,7 +13,7 @@ const Confettis = ({ value }) => {
         colors={colors}
         numberOfPieces={300}
       />
-      <div className="victory">{value} est vainqueur !</div>
+      <div className="victoryText">{value} est vainqueur !</div>
     </>
   );
 };

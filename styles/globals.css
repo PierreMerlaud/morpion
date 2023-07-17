@@ -162,9 +162,16 @@ ol {
   text-align: center;
 }
 
-.victory {
+.victoryText {
   font-size: 2.5rem;
   color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.victoryDiv {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: center;
 }
 
 @media screen and (max-width: 780px) {
@@ -194,5 +201,9 @@ ol {
 
   ol {
     padding-inline-start: 0px;
+  }
+
+  .victoryText {
+    font-size: 1.5rem;
   }
 }
