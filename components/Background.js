@@ -1,26 +1,36 @@
 export default function Background() {
   return (
     <div class="background">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="X"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
+      <div class="O"></div>
     </div>
   );
 }

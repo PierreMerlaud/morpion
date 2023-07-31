@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Background from "../components/Background";
+import BackgroundWinner from "../components/BackgroundWinner";
 import CalculateWinner from "../components/CalculateWinner";
 import Board from "../components/Board";
 import Head from "next/head";
@@ -98,15 +99,18 @@ export default function Game() {
       <Background />
       <div className="game">
         {winner ? (
-          <div className="victoryDiv">
-            <Confettis value={winner} />
-            <button
-              className="buttonBase buttonStart"
-              onClick={() => jumpTo(0)}
-            >
-              Go to game start
-            </button>
-          </div>
+          <>
+            <BackgroundWinner value={winner} />
+            <div className="victoryDiv">
+              <Confettis value={winner} />
+              <button
+                className="buttonBase buttonStart"
+                onClick={() => jumpTo(0)}
+              >
+                Go to game start
+              </button>
+            </div>
+          </>
         ) : (
           <>
             <div className="game-board">
