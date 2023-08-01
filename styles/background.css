@@ -55,7 +55,7 @@
 .background div:nth-child(0) {
   left: 66%;
   bottom: 0rem;
-  animation-delay: 1s;
+  animation-delay: 0s;
   font-size: 8rem;
 }
 .background div:nth-child(1) {
@@ -78,8 +78,8 @@
 }
 .background div:nth-child(4) {
   left: 12%;
-  bottom: 0rem;
-  animation-delay: 5s;
+  bottom: 1rem;
+  animation-delay: 0s;
   font-size: 4rem;
 }
 .background div:nth-child(5) {
@@ -109,12 +109,12 @@
 .background div:nth-child(9) {
   left: 27%;
   bottom: -0.5rem;
-  animation-delay: 39s;
+  animation-delay: 0s;
   font-size: 12rem;
 }
 .background div:nth-child(10) {
   left: 30%;
-  bottom: -0.1rem;
+  bottom: -1rem;
   animation-delay: 28s;
   font-size: 7rem;
 }
@@ -145,7 +145,7 @@
 .background div:nth-child(15) {
   left: 45%;
   bottom: 0rem;
-  animation-delay: 2s;
+  animation-delay: 0s;
   font-size: 18rem;
 }
 .background div:nth-child(16) {
@@ -157,7 +157,7 @@
 .background div:nth-child(17) {
   left: 51%;
   bottom: 0rem;
-  animation-delay: 1s;
+  animation-delay: 0s;
   font-size: 9rem;
 }
 .background div:nth-child(18) {
@@ -187,13 +187,13 @@
 .background div:nth-child(22) {
   left: 66%;
   bottom: -1rem;
-  animation-delay: 22s;
+  animation-delay: 0s;
   font-size: 3rem;
 }
 .background div:nth-child(23) {
   left: 69%;
   bottom: 0rem;
-  animation-delay: 4s;
+  animation-delay: 1s;
   font-size: 8rem;
 }
 .background div:nth-child(24) {
