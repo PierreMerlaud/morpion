@@ -2,15 +2,15 @@ import "../styles/background.css";
 import "../styles/game.css";
 import "../styles/intro.css";
 import Background from "../components/Background";
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 
 export default function App({ Component, pageProps, router }) {
   return (
     <>
       <Background />
-      <AnimatePresence mode="wait" initial={false}>
-        <Component {...pageProps} key={router.asPath} />
-      </AnimatePresence>
+      {/* <AnimatePresence mode="wait" initial={false}> */}
+      <Component {...pageProps} key={router.asPath} />
+      {/* </AnimatePresence> */}
     </>
   );
 }

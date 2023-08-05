@@ -4,7 +4,7 @@ import CalculateWinner from "../components/CalculateWinner";
 import Board from "../components/Board";
 import Head from "next/head";
 import Confettis from "../components/Confettis";
-import Layout from "../components/LayoutTransition";
+// import Layout from "../components/LayoutTransition";
 
 /* If you mutated the squares array, implementing time travel would be very difficult.
 
@@ -96,43 +96,43 @@ export default function Game() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-        {/* <div className="introLink">
+      {/* <Layout> */}
+      {/* <div className="introLink">
           <Link href="/" className="introductionLink">
             Retour à l'introduction
           </Link>
         </div> */}
-        <div className="game">
-          {winner ? (
-            <>
-              <BackgroundWinner value={winner} />
-              <div className="victoryDiv">
-                <Confettis value={winner} />
-                <button
-                  className="buttonBase buttonStart"
-                  onClick={() => jumpTo(0)}
-                >
-                  Go to game start
-                </button>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="game-board">
-                <Board
-                  xIsNext={xIsNext}
-                  squares={currentSquares}
-                  onPlay={handlePlay}
-                />
-              </div>
+      <div className="game">
+        {winner ? (
+          <>
+            <BackgroundWinner value={winner} />
+            <div className="victoryDiv">
+              <Confettis value={winner} />
+              <button
+                className="buttonBase buttonStart"
+                onClick={() => jumpTo(0)}
+              >
+                Go to game start
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="game-board">
+              <Board
+                xIsNext={xIsNext}
+                squares={currentSquares}
+                onPlay={handlePlay}
+              />
+            </div>
 
-              <div className="game-info">
-                <ol>{moves}</ol>
-              </div>
-            </>
-          )}
-        </div>
-      </Layout>
+            <div className="game-info">
+              <ol>{moves}</ol>
+            </div>
+          </>
+        )}
+      </div>
+      {/* </Layout> */}
     </>
   );
 }
