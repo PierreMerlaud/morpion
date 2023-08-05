@@ -1,36 +1,36 @@
 export default function Background() {
   return (
-    <div class="background">
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="X"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
-      <div class="O"></div>
+    <div className="background">
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="X"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
+      <div className="O"></div>
     </div>
   );
 }
