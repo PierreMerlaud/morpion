@@ -1,6 +1,7 @@
 import React from "react";
 import Square from "./Square";
 import CalculateWinner from "./CalculateWinner";
+import Link from "next/link";
 
 // Array(9).fill(null) creates an array with nine elements and sets each of them to null.
 // The useState() call around it declares a squares state variable that’s initially set to that array.
@@ -62,6 +63,11 @@ export default function Board({ xIsNext, squares, onPlay }) {
           <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
           <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+        </div>
+        <div className="introLink">
+          <Link href="/" className="introductionLink">
+            Retour à l'introduction
+          </Link>
         </div>
       </>
     </>

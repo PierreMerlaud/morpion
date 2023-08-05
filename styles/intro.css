@@ -1,0 +1,36 @@
+.intro {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 3rem;
+}
+
+p {
+  margin: 3rem 15rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 3rem;
+}
+
+.gameLink {
+  margin: 3rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem;
+  animation: blinkBorder 0.3s infinite alternate;
+}
+
+@keyframes blinkBorder {
+  from {
+    border: 0.2rem dotted #ffffff;
+  }
+  to {
+    border: none;
+  }
+}
