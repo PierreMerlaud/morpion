@@ -55,13 +55,13 @@ export default function Game() {
     let CSS;
     let buttonBase = "buttonBase";
     if (move > 0) {
-      description = "Go to move #" + move;
+      description = "Aller au tour #" + move;
     } else {
-      description = "Go to game start";
+      description = "Relancer la partie";
     }
 
     if (move === currentMove) {
-      description = "You are at move #" + move;
+      description = "Vous êtes au tour #" + move;
     }
 
     if (move === 0) {
@@ -107,7 +107,7 @@ export default function Game() {
                   className="buttonBase buttonStart"
                   onClick={() => jumpTo(0)}
                 >
-                  Go to game start
+                  Relancer le jeu
                 </button>
               </div>
             </>

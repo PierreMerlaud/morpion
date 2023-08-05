@@ -41,7 +41,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
       statusClass += " o-color";
     }
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = "Joueur suivant: " + (xIsNext ? "X" : "O");
     statusClass += xIsNext ? " x-color" : " o-color";
   }
 
