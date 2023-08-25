@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).# morpion
+Jeu du morpion en react / next-js.
