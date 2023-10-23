@@ -11,7 +11,7 @@
 
 - découvrir Next-js.
 - projet responsive.
-- héberger le projet.
+- héberger le projet avec Vercel.
 
 ### Stack
 
