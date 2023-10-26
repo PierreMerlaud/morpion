@@ -1,4 +1,4 @@
-# Jeu du morpion avec Next-js (projet personnel)
+# Jeu du morpion avec Next-js (projet personnel).
 
 
 
